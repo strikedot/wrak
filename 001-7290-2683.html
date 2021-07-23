@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script data-ad-client="ca-pub-7306301752801857" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.word {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.debut {
+  background-color: green;
+  color: white;
+}
+.indic {
+  color: pink;
+}
+.sec {
+  color: teal;
+}
+
+body {
+  font-family: 'Lato', 'Lucida Console', 'Roboto Mono', sans-seif;
+  background-color: brown;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <span class="sec">Games</span>
+    <a href="games/agar.io">Agar.io</a>
+    <a href="games/agariogroups">iWRAK Agario Groups</a>
+    <br /><br /><br />
+  <span class="sec">Maybe other things later... :)</span>
+    <a href="#close" onclick="window.close()">Close the window</a>
+  </div>
+</div>
+
+<div class="word">
+<span style="font-size:30px;cursor:pointer;text-align:center;" class="debut" onclick="openNav()">iWRAK</span>
+<p class="indic">Click ↑</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+  <span id="close" onfocus="window.close()"></span>
+</body>
+</html>
